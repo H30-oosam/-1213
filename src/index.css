@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    background-color: #f8fafc; /* Slate 50 backplate */
+    color: #0f172a; /* Slate 900 text */
+    font-family: var(--font-sans);
+    direction: rtl; /* Set default Arabic direction */
+  }
+}
+
+/* HIGH DENSITY CUSTOM 3D PREMIUM VIBRANT SYSTEM OVERRIDES */
+
+body {
+  background: radial-gradient(circle at top right, #0b0f19, #05070c) !important;
+  color: #f1f5f9 !important;
+  font-family: var(--font-sans);
+  direction: rtl; /* Set default Arabic direction */
+}
+
+#erp-root-application {
+  background: transparent !important;
+  color: #f1f5f9 !important;
+}
+
+/* Photo-identical Deep Purple & Amethyst 3D Console Header Layout */
+#erp-root-application header {
+  background: linear-gradient(135deg, #1e0b36 0%, #0d0620 100%) !important;
+  border-bottom: 4px solid #6366f1 !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+#erp-root-application header h1 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#erp-root-application header p {
+  color: #a5b4fc !important; /* Soft lavender lavender indicator */
+}
+
+/* User simulation and switcher inside the amethyst header context */
+#erp-root-application header div.bg-white\/10,
+#erp-root-application header div.bg-[#5a2ca6],
+#erp-root-application header div.bg-slate-50,
+#erp-root-application header div.bg-slate-100 {
+  background-color: rgba(99, 102, 241, 0.15) !important;
+  border: 1px solid rgba(99, 102, 241, 0.3) !important;
+  border-bottom: 3px solid rgba(99, 102, 241, 0.45) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25) !important;
+}
+
+#erp-root-application header select {
+  background-color: #1e0b36 !important;
+  border: 1px solid rgba(99, 102, 241, 0.4) !important;
+  color: #ffffff !important;
+}
+
+#erp-root-application header select option {
+  background-color: #0f0720 !important;
+  color: #ffffff !important;
+}
+
+/* Unified 3D Tactile Sidebar Layout with rich contrast and bevels */
+#erp-root-application aside {
+  background: linear-gradient(180deg, #0e1322 0%, #070a12 100%) !important;
+  border: 1px solid rgba(99, 102, 241, 0.15) !important;
+  border-bottom: 5px solid #141b2f !important;
+  border-radius: 1.25rem !important;
+  color: #94a3b8 !important;
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+#erp-root-application aside h1,
+#erp-root-application aside h2,
+#erp-root-application aside h3,
+#erp-root-application aside div {
+  color: #f1f5f9 !important;
+}
+
+/* Sidebar Navigation 3D Buttons */
+#erp-root-application aside button {
+  color: #94a3b8 !important;
+  font-weight: 600 !important;
+  border-right: 4px solid transparent !important;
+  transition: all 0.2s ease !important;
+}
+
+#erp-root-application aside button:hover {
+  background-color: rgba(99, 102, 241, 0.08) !important;
+  color: #a5b4fc !important;
+  transform: translateX(-2px) !important;
+}
+
+/* Active sidebar tab styled with 3D tactile glowing accent */
+#erp-root-application aside button.bg-indigo-600,
+#erp-root-application aside button[class*="bg-indigo-600"] {
+  background: linear-gradient(270deg, rgba(99, 102, 241, 0.2) 0%, rgba(99, 102, 241, 0.02) 100%) !important;
+  color: #c7d2fe !important; /* Beautiful glowing blue */
+  font-weight: 700 !important;
+  border-right: 4px solid #6366f1 !important;
+  box-shadow: inset -5px 0 15px rgba(99, 102, 241, 0.15) !important;
+  transform: translateX(-4px) !important;
+}
+
+/* 3D Kinetic Cards styling for workspace widgets */
+#erp-root-application div.bg-white,
+#erp-root-application div.bg-slate-900:not(aside),
+#erp-root-application div.bg-slate-950:not(aside),
+#erp-root-application section.bg-slate-900:not(aside),
+#erp-root-application div.bg-slate-905:not(aside),
+#erp-root-application .bg-slate-900:not(aside),
+#erp-root-application .bg-slate-950:not(aside),
+#erp-root-application .card:not(aside) {
+  background: linear-gradient(135deg, #111726 0%, #0a0e1a 100%) !important;
+  color: #f1f5f9 !important;
+  border: 1px solid rgba(99, 102, 241, 0.2) !important;
+  border-bottom: 4px solid #1c263d !important; /* physical bottom bevel */
+  border-radius: 1.15rem !important;
+  padding: 1rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), inset 0 1.5px 0 rgba(255, 255, 255, 0.05) !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Hover effects for 3D kinetic interaction click/focus */
+#erp-root-application div.bg-white:hover,
+#erp-root-application div.bg-slate-900:not(aside):hover,
+#erp-root-application div.bg-slate-950:not(aside):hover,
+#erp-root-application .card:not(aside):hover {
+  border-color: rgba(99, 102, 241, 0.45) !important;
+  border-bottom: 4px solid #6366f1 !important; /* glowing border key */
+  transform: translateY(-4px) !important;
+  box-shadow: 0 20px 35px -5px rgba(99, 102, 241, 0.25), 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+#erp-root-application main h1,
+#erp-root-application main h2,
+#erp-root-application main h3,
+#erp-root-application main h4,
+#erp-root-application main h5,
+#erp-root-application main h6 {
+  color: #f8fafc !important;
+}
+
+#erp-root-application main p,
+#erp-root-application main span {
+  color: #cbd5e1 !important;
+}
+
+/* Beautiful custom welcome card with glowing background */
+#erp-root-application main .bg-gradient-to-tr {
+  background: linear-gradient(135deg, #1e0b36 0%, #2e1065 100%) !important;
+  border: 1px solid rgba(139, 92, 246, 0.3) !important;
+  border-right: 5px solid #8b5cf6 !important; /* high class 3D brand ribbon */
+  border-bottom: 4px solid #1e1b4b !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+#erp-root-application main .bg-gradient-to-tr h2,
+#erp-root-application main .bg-gradient-to-tr h3 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#erp-root-application main .bg-gradient-to-tr p {
+  color: #ddd6fe !important;
+}
+
+/* Glassmorphic 3D Input controls, selects and fields */
+#erp-root-application input,
+#erp-root-application select,
+#erp-root-application textarea {
+  background-color: #060913 !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(99, 102, 241, 0.25) !important;
+  border-bottom: 2px solid rgba(99, 102, 241, 0.4) !important;
+  border-radius: 0.75rem !important;
+  font-size: 0.75rem !important;
+  padding: 0.6rem 0.8rem !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+  transition: all 0.2s ease !important;
+}
+
+#erp-root-application input:focus,
+#erp-root-application select:focus,
+#erp-root-application textarea:focus {
+  border-color: #6366f1 !important;
+  border-bottom: 2px solid #818cf8 !important;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.25), inset 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+  outline: none !important;
+}
+
+/* Core Buttons in system designed with rich 3D dynamic kinetic states */
+#erp-root-application button:not(aside button) {
+  border-radius: 0.75rem !important;
+  transition: all 0.1s linear !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+#erp-root-application .bg-indigo-600 {
+  background: linear-gradient(180deg, #6366f1 0%, #4f46e5 100%) !important;
+  border-bottom: 3.5px solid #2d109f !important;
+  color: #ffffff !important;
+}
+
+#erp-root-application .bg-indigo-600:hover {
+  background: linear-gradient(180deg, #818cf8 0%, #6366f1 100%) !important;
+  transform: translateY(1.5px) !important;
+  border-bottom: 2px solid #2d109f !important;
+}
+
+#erp-root-application .bg-indigo-600:active {
+  transform: translateY(3.5px) !important;
+  border-bottom-width: 0px !important;
+}
+
+#erp-root-application .text-indigo-400 {
+  color: #818cf8 !important;
+}
+
+/* System Maintenance button customized to match exact green 3D spec */
+#erp-root-application .bg-\[\#22c55e\] {
+  background: linear-gradient(180deg, #34d399 0%, #059669 100%) !important;
+  border-bottom: 3.5px solid #044e37 !important;
+}
+#erp-root-application .bg-\[\#22c55e\]:hover {
+  background: linear-gradient(180deg, #6ee7b7 0%, #10b981 100%) !important;
+  transform: translateY(1.5px) !important;
+  border-bottom: 2px solid #044e37 !important;
+}
+#erp-root-application .bg-\[\#22c55e\]:active {
+  transform: translateY(3.5px) !important;
+  border-bottom-width: 0px !important;
+}
+
+/* Point of Sale button */
+#erp-root-application .bg-\[\#5a2ca6\] {
+  background: linear-gradient(180deg, #8b5cf6 0%, #6d28d9 100%) !important;
+  border-bottom: 3.5px solid #431407 !important;
+}
+#erp-root-application .bg-\[\#5a2ca6\]:hover {
+  background: linear-gradient(180deg, #a78bfa 0%, #7c3aed 100%) !important;
+  transform: translateY(1.5px) !important;
+  border-bottom: 2px solid #431407 !important;
+}
+#erp-root-application .bg-\[\#5a2ca6\]:active {
+  transform: translateY(3.5px) !important;
+  border-bottom-width: 0px !important;
+}
+
+/* Sync Data Backup button */
+#erp-root-application .bg-\[\#0284c7\] {
+  background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%) !important;
+  border-bottom: 3.5px solid #034f78 !important;
+}
+#erp-root-application .bg-\[\#0284c7\]:hover {
+  background: linear-gradient(180deg, #7dd3fc 0%, #0ea5e9 100%) !important;
+  transform: translateY(1.5px) !important;
+  border-bottom: 2px solid #034f78 !important;
+}
+#erp-root-application .bg-\[\#0284c7\]:active {
+  transform: translateY(3.5px) !important;
+  border-bottom-width: 0px !important;
+}
+
+/* GPS attendances green button */
+#erp-root-application .bg-emerald-500 {
+  background: linear-gradient(180deg, #34d399 0%, #10b981 100%) !important;
+  border-bottom: 3.1px solid #065f46 !important;
+}
+#erp-root-application .bg-emerald-500:hover {
+  background: linear-gradient(180deg, #6ee7b7 0%, #059669 100%) !important;
+  transform: translateY(1.5px) !important;
+  border-bottom: 1.6px solid #065f46 !important;
+}
+#erp-root-application .bg-emerald-500:active {
+  transform: translateY(3.1px) !important;
+  border-bottom-width: 0px !important;
+}
+
+/* Modern 3D Obsidian Obsidian Table Design */
+#erp-root-application table {
+  background-color: #0b0f19 !important;
+  border-collapse: collapse !important;
+  width: 100% !important;
+  border: 1px solid rgba(99, 102, 241, 0.2) !important;
+  border-bottom: 4px solid #141a29 !important;
+  border-radius: 0.85rem !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+#erp-root-application thead,
+#erp-root-application tr.bg-slate-900,
+#erp-root-application tr.bg-slate-950 {
+  background-color: #121829 !important; /* solid light header backplate */
+}
+
+#erp-root-application th {
+  background-color: #151c30 !important;
+  border-bottom: 2px solid rgba(99, 102, 241, 0.3) !important;
+  color: #c7d2fe !important; /* light violet text */
+  font-weight: 700 !important;
+  font-size: 11px !important;
+  padding: 0.65rem 0.85rem !important;
+}
+
+#erp-root-application td {
+  border-bottom: 1px solid rgba(99, 102, 241, 0.1) !important;
+  color: #e2e8f0 !important;
+  font-size: 11px !important;
+  padding: 0.65rem 0.85rem !important;
+}
+
+#erp-root-application tbody tr:hover {
+  background-color: rgba(99, 102, 241, 0.12) !important; /* subtle highlight hover */
+}
+
+/* Glow Accent Indicators and high-contrast status badges */
+#erp-root-application .bg-emerald-500\/15,
+#erp-root-application .bg-emerald-500\/10,
+#erp-root-application .bg-emerald-600\/10,
+#erp-root-application .text-emerald-400,
+#erp-root-application .text-emerald-300 {
+  background-color: rgba(52, 211, 153, 0.1) !important;
+  color: #34d399 !important;
+  border: 1px solid rgba(52, 211, 153, 0.3) !important;
+}
+
+#erp-root-application .bg-rose-500\/15,
+#erp-root-application .bg-rose-500\/10,
+#erp-root-application .bg-red-500\/10,
+#erp-root-application .text-rose-400,
+#erp-root-application .text-red-400 {
+  background-color: rgba(244, 63, 94, 0.1) !important;
+  color: #f43f5e !important;
+  border: 1px solid rgba(244, 63, 94, 0.3) !important;
+}
+
+#erp-root-application .bg-amber-500\/15,
+#erp-root-application .bg-amber-500\/10,
+#erp-root-application .bg-yellow-500\/10,
+#erp-root-application .text-amber-400,
+#erp-root-application .text-yellow-400 {
+  background-color: rgba(245, 158, 11, 0.1) !important;
+  color: #fbbf24 !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+}
+
+/* Crystal clear responsive text contrast and optimization overrides */
+#erp-root-application * {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+#erp-root-application .text-slate-800:not(#golden-cert-print-sheet *, #salary-payslip-canvas *, #corporate-legal-sheet *),
+#erp-root-application .text-slate-700:not(#golden-cert-print-sheet *, #salary-payslip-canvas *, #corporate-legal-sheet *),
+#erp-root-application .text-slate-600:not(#golden-cert-print-sheet *, #salary-payslip-canvas *, #corporate-legal-sheet *),
+#erp-root-application .text-slate-900:not(#golden-cert-print-sheet *, #salary-payslip-canvas *, #corporate-legal-sheet *, #login-screen-view *),
+#erp-root-application .text-gray-700:not(#golden-cert-print-sheet *, #salary-payslip-canvas *, #corporate-legal-sheet *),
+#erp-root-application .text-slate-500:not(#golden-cert-print-sheet *, #salary-payslip-canvas *, #corporate-legal-sheet *, #login-screen-view *),
+#erp-root-application .text-gray-600:not(#golden-cert-print-sheet *, #salary-payslip-canvas *, #corporate-legal-sheet *) {
+  color: #e2e8f0 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+#erp-root-application .text-slate-450,
+#erp-root-application .text-slate-400,
+#erp-root-application .text-gray-400 {
+  color: #cbd5e1 !important;
+}
+
+#erp-root-application .text-indigo-900,
+#erp-root-application .text-indigo-850 {
+  color: #c7d2fe !important;
+}
+
+#erp-root-application label {
+  color: #a5b4fc !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.4);
+}
+
+#erp-root-application input::placeholder,
+#erp-root-application textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Modals overlays customized */
+#erp-root-application .fixed {
+  background-color: rgba(3, 7, 18, 0.85) !important;
+  backdrop-filter: blur(10px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1rem !important;
+  z-index: 9999 !important;
+}
+
+#erp-root-application .fixed div.bg-slate-900,
+#erp-root-application .fixed form {
+  background: linear-gradient(135deg, #131a2e 0%, #0a0d17 100%) !important;
+  color: #f1f5f9 !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+  border-bottom: 5px solid #232a42 !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  max-height: 92vh !important;
+  max-width: 95vw !important;
+  width: 100% !important;
+  overflow-y: auto !important;
+  padding: 1.5rem !important;
+}
+
+/* Modal Inner Label elements list styling */
+#erp-root-application .fixed form label {
+  color: #a5b4fc !important;
+}
+
+/* High Density Compact lists and rows inside widgets */
+#erp-root-application .space-y-2 > div,
+#erp-root-application .space-y-3 > div {
+  padding: 0.65rem 0.85rem !important;
+  background-color: #0e1424 !important;
+  border: 1px solid rgba(99, 102, 241, 0.1) !important;
+  border-radius: 0.65rem !important;
+  color: #e2e8f0 !important;
+}
+
+/* Footer layout style update */
+#erp-root-application footer {
+  background: #060912 !important;
+  border-top: 1px solid rgba(99, 102, 241, 0.15) !important;
+  color: #64748b !important;
+}
+
+/* Scrollbars customized to look clean and futuristic */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #060913;
+}
+::-webkit-scrollbar-thumb {
+  background: #232a42;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+
+/* Scrollbars customized to look clean */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

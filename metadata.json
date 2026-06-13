@@ -1,0 +1,6 @@
+{
+  "name": "Hossam Elwardany Business Management System",
+  "description": "An integrated ERP and school management platform for digital marketing agencies and educational academies.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
